@@ -65,7 +65,7 @@ document.addEventListener("keydown", function (e) {
     updateCarPosition();
 });
 
-/* Lane Scroll */
+
 function moveLanes() {
     laneOffset += laneSpeed;
 
