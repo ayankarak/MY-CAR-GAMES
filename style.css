@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+.startScreen {
+    position: absolute;
+    text-align: center;
+    background: #111;
+    padding: 30px 50px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.startScreen h1 {
+    margin-bottom: 20px;
+}
+
+#startBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #867e32;
+    border: none;
+    color: #d2eaf1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#startBtn:hover {
+    background: #fdd365;
+}
+
+.hide{
+    display: none;
+} 
+
+.scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+}
+.gameArea {
+    width: 510px;
+    height: 700px;
+    background-color: #444; /* Road color */
+    position: relative;
+    overflow: hidden;
+    border: 4px solid white;
+}
+.gameArea {
+    width: 510px;
+    height: 700px;
+    background-color: #555;
+    position: relative;
+    overflow: hidden;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+}
+
+.lane {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: repeating-linear-gradient(
+        white 0px,
+        white 40px,
+        transparent 40px,
+        transparent 80px
+    );
+    background-size: 100% 80px;
+}
+
+.car {
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    bottom: 15px;
+    left: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.enemy {
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gameOverScreen {
+    background:#d1dcd9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+.gameOverScreen h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.gameOverScreen p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#playAgainBtn {
+    border: none;
+    color: #67919f;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+#playAgainBtn:hover {
+    background:#d1dcd9;
+}
