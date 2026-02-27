@@ -33,7 +33,6 @@ const enemyImages = [
     "assets/bluecar.png",
     "assets/greencar.png"
 ];
-
 /* Player Image */
 player.style.backgroundImage = "url('assets/car.png')";
 
