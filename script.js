@@ -158,6 +158,8 @@ function startGame() {
 
     currentLane = Math.floor(totalLanes / 2); 
     carBottom = 15;
+    laneOffset = 0;
+    laneSpeed = 5;
     updateCarPosition();
 
     score = 0;
