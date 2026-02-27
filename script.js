@@ -160,6 +160,7 @@ function startGame() {
     carBottom = 15;
     laneOffset = 0;
     laneSpeed = 5;
+    enemySpeed = 5;
     updateCarPosition();
 
     score = 0;
