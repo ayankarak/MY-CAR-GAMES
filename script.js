@@ -129,7 +129,7 @@ function moveEnemies() {
     });
 }
 
-/* Collision */
+
 function isCollide(a, b) {
     let aRect = a.getBoundingClientRect();
     let bRect = b.getBoundingClientRect();
