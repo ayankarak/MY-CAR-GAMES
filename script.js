@@ -43,6 +43,7 @@ function updateCarPosition() {
     player.style.bottom = carBottom + "px";
 }
 
+
 document.addEventListener("keydown", function (e) {
 
     if (e.key === "ArrowLeft" && currentLane > 0) {
